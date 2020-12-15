@@ -12,27 +12,27 @@ Olimpia Milano - Cantù | 55 - 60
 <?php
 $matches = [ //array che contiene le partite(primo livello)
         [ // array che contiene i dati della partita(secondo livello)
-        "Squadra di casa" => "Olimpia Milano",
-        "Squadra ospite" => "Virtus Bologna",
-        "Punteggio squadra di casa" => rand(0, 150),
-        "Punteggio squadra ospite" => rand(0, 150),
+        "squadra_di_casa" => "Olimpia Milano",
+        "squadra_ospite" => "Virtus Bologna",
+        "punteggio_squadra_di_casa" => rand(0, 150),
+        "punteggio_squadra_ospite" => rand(0, 150),
         ],
         [
-        "Squadra di casa" => "Varese",
-        "Squadra ospite" => "Reggiana",
-        "Punteggio squadra di casa" => rand(0, 150),
-        "Punteggio squadra ospite" => rand(0, 150),
+        "squadra_di_casa" => "Varese",
+        "squadra_ospite" => "Reggiana",
+        "punteggio_squadra_di_casa" => rand(0, 150),
+        "punteggio_squadra_ospite" => rand(0, 150),
         ],
         [
-        "Squadra di casa" => "Virtus Roma",
-        "Squadra ospite" => "Treviso Basket",
-        "Punteggio squadra di casa" => rand(0, 150),
-        "Punteggio squadra ospite" => rand(0, 150),
+        "squadra_di_casa" => "Virtus Roma",
+        "squadra_ospite" => "Treviso Basket",
+        "punteggio_squadra_di_casa" => rand(0, 150),
+        "punteggio_squadra_ospite" => rand(0, 150),
         ],
 
 ];
 
-//stampa per debug 
+//stampa per debug
 echo var_dump($matches).'<br><br>';
 
 //titolo
@@ -41,6 +41,6 @@ echo 'PARTITE:<br>';
 //ciclo l'array matches
 foreach ($matches as $matchName => $matchValue) {
     // Stampo secondo lo schema richiesto
-    echo ($matchName + 1).': '.$matchValue['Squadra di casa'].' - '.$matchValue['Squadra ospite'].' | '.$matchValue['Punteggio squadra di casa'].' - '.$matchValue['Punteggio squadra ospite'].'<br>';
+    echo ($matchName + 1).': '.$matchValue['squadra_di_casa'].' - '.$matchValue['squadra_ospite'].' | '.$matchValue['punteggio_squadra_di_casa'].' - '.$matchValue['punteggio_squadra_ospite'].'<br>';
 }
  ?>
