@@ -23,11 +23,11 @@ echo 'Lunghezza di '.$name.' > 3 ?:';
 echo var_dump($valid_name);
 echo "-------------------------------------------------------------------------<br>";
 
-//variabile che verifica se la mail contiene almeno un punto e una sola chiocciola
+//variabile che verifica se la mail contiene almeno un punto e una sola chiocciola(se la chiocciola è il primo carattere la posizione 0 è ritenuta come falsa)
 $valid_mail = strpos($mail, '@') && (strpos($mail, '@') === strrpos($mail, '@')) && strpos($mail, '.');
 echo "-------------------------------------------------------------------------<br>";
 echo 'CONTROLLO 2)<br>';
-echo $mail.' contiene almeno un punto e una sola chiocciola?:';
+echo $mail.' contiene almeno un punto e una sola chiocciola(la chiocciola non deve essere il primo carattere)?:';
 echo var_dump($valid_mail);
 echo "-------------------------------------------------------------------------<br>";
 
