@@ -31,11 +31,11 @@ echo $mail.' contiene almeno un punto e una sola chiocciola?:';
 echo var_dump($valid_mail);
 echo "-------------------------------------------------------------------------<br>";
 
-//variabile che verifica se l'età è un numero
-$valid_age = is_numeric($age);
+//variabile che verifica se l'età è un numero maggiore di 0
+$valid_age = (is_numeric($age) && ($age > 0));
 echo "-------------------------------------------------------------------------<br>";
 echo 'CONTROLLO 3)<br>';
-echo $age.' è un numero?:';
+echo $age.' è un numero(maggiore di 0)?:';
 echo var_dump($valid_age);
 echo "-------------------------------------------------------------------------<br>";
 
