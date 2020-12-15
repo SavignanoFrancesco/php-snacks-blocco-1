@@ -43,7 +43,7 @@ echo "-------------------------------------------------------------------------<
 if($valid_name && $valid_mail && $valid_age){
     echo "ACCESSO RIUSCITO";
 }
-//se i dati inseriti sono validi
+//se i dati inseriti non sono validi
 else{
     echo "ACCESSO NEGATO";
 }
