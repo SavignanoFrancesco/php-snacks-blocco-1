@@ -7,7 +7,6 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
 
 <?php
 
-
 //inserisco dentro le variabili i valory presi dalla query string
 $name = $_GET['name'];
 $mail = $_GET['mail'];
@@ -16,9 +15,9 @@ $age = $_GET['age'];
 // echo $name.$mail.$age;
 
 //variabile che verifica se il nome ha più di tre caratteri
+$valid_name = (strlen($name) > 3);
 echo "-------------------------------------------------------------------------<br>";
 echo 'CONTROLLO 1)<br>';
-$valid_name = (strlen($name) > 3);
 echo 'Lunghezza di '.$name.' > 3 ?:';
 echo var_dump($valid_name);
 echo "-------------------------------------------------------------------------<br>";
